@@ -384,7 +384,7 @@ header.scrolled {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #2B2B2B;
     color: white;
     padding: 50px 20px 20px;
     margin-top: auto;
@@ -402,7 +402,7 @@ footer {
 .footer-section h4 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    color: #667eea;
+    color: var(--color-4);
 }
 
 .footer-section p {
@@ -425,7 +425,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #667eea;
+    color: var(--color-5);
 }
 
 .social-links {
@@ -447,7 +447,7 @@ footer {
 }
 
 .social-icon:hover {
-    background: #667eea;
+    background: var(--color-5);
     transform: translateY(-3px);
 }
 
