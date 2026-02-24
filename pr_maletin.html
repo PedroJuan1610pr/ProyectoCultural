@@ -1,103 +1,54 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Proyecto Modding SMR Tarde</title>
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/estilomaletin.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="menu">
-                <div class="container">
-                    <div class="logo-titulo">
-                        <div class="logo">
-                            <img
-                                src="media/logo.png"
-                                alt="Logo del proyecto"
-                                width="50"
-                                height="50"
-                            />
-                        </div>
-                        <div class="titulo">
-                            <span class="titulo-principal"
-                                >Proyecto Modding</span
-                            >
-                            <span class="titulo-secundario">SMR Tarde</span>
-                        </div>
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Modding SMR Tarde</title>
+    <link rel="stylesheet" href="/css/estilomaletin.css" />
+</head>
+<body>
 
-                    <!-- Botón hamburguesa para móvil -->
-                    <div class="hamburger" id="hamburger">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </div>
-
-                    <ul class="nav-menu" id="nav-menu">
-                        <li>
-                            <a href="index.html#inicio" class="nav-link">
-                                <span class="nav-icon">🏠</span>
-                                <span class="nav-text">Inicio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html#modding" class="nav-link">
-                                <span class="nav-icon">🖥️</span>
-                                <span class="nav-text">Modding</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="index.html#historia" class="nav-link">
-                                <span class="nav-icon">📜</span>
-                                <span class="nav-text">Historia</span>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#!" id="proyectos-btn" class="nav-link">
-                                <span class="nav-icon">📁</span>
-                                <span class="nav-text">Proyectos</span>
-                                <span class="dropdown-arrow">&#9662;</span>
-                            </a>
-                            <ul class="dropdown-menu" id="dropdown-menu">
-                                <li>
-                                    <a href="pr_maletin.html">
-                                        <span class="dropdown-icon">💼</span>
-                                        Proyecto Maletin
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="pr_proyector.html">
-                                        <span class="dropdown-icon">📽️</span>
-                                        Proyecto Proyector
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="pr_rueda.html">
-                                        <span class="dropdown-icon">🛞</span>
-                                        Proyecto Rueda
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#contacto" class="nav-link nav-link-cta">
-                                <span class="nav-icon">✉️</span>
-                                <span class="nav-text">Contacto</span>
-                            </a>
-                        </li>
-                    </ul>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <div class="logo-titulo">
+                <div class="logo">
+                    <img src="media/logo.png" alt="Logo del proyecto" width="50" height="50" />
                 </div>
-            </nav>
-        </header>
+                <div class="titulo">
+                    <span class="titulo-principal">Proyecto Modding</span>
+                    <span class="titulo-secundario">SMR Tarde</span>
+                </div>
+            </div>
 
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
 
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link"><span class="nav-icon">🏠</span>Inicio</a></li>
+                <li><a href="#modding" class="nav-link"><span class="nav-icon">🖥️</span>Modding</a></li>
+                <li><a href="#historia" class="nav-link"><span class="nav-icon">📜</span>Historia</a></li>
+                <li class="dropdown">
+                    <a href="#!" id="proyectos-btn" class="nav-link">
+                        <span class="nav-icon">📁</span>Proyectos
+                        <span class="dropdown-arrow">&#9662;</span>
+                    </a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li><a href="pr_maletin.html"><span class="dropdown-icon">💼</span>Proyecto Maletin</a></li>
+                        <li><a href="pr_proyector.html"><span class="dropdown-icon">📽️</span>Proyecto Proyector</a></li>
+                        <li><a href="pr_rueda.html"><span class="dropdown-icon">🛞</span>Proyecto Rueda</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto" class="nav-link nav-link-cta"><span class="nav-icon">✉️</span>Contacto</a></li>
+            </ul>
+        </div>
+    </header>
 
-
-        
-    <!-- ===== Barra lateral ===== -->
-    <nav>
+    <!-- ===== SIDEBAR ===== -->
+    <nav class="sidebar">
         <h2>Modding PC</h2>
         <a href="#objetivos">Objetivos</a>
         <a href="#materiales">Materiales</a>
@@ -111,46 +62,45 @@
         <a href="#fase7">Fase 7</a>
     </nav>
 
-    <!-- ===== Contenido principal ===== -->
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
     <main>
 
         <section id="objetivos">
             <h1>Proyecto de Modding</h1>
-            <h1>Pc Portatil Robusto</h1>
             <h2>🎯 Objetivos</h2>
             <ul>
                 <li>Reutilizar componentes y chasis antiguos.</li>
                 <li>Diseñar un PC transportable tipo "rugged".</li>
-                <li>Integrar sistemas de refrigeracion y proteccion.</li>
-                <li>Ejemplo de lo que se quiere conseguir: <br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OuKrE2zlTtI?si=CNLS5aaeGZ0yURPx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                <li>Integrar sistemas de refrigeración y protección.</li>
+                <li>Ejemplo: <br> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OuKrE2zlTtI?si=CNLS5aaeGZ0yURPx" 
+                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </li>
             </ul>
         </section>
 
         <section id="materiales">
             <h2>🛠 Materiales Necesarios</h2>
-            <H4> Obligatorios</H4>
+            <h4>Obligatorios</h4>
             <ul>
-                
                 <li>Caja de PC antigua (ATX/microATX/mini-ITX)</li>
-                <li>Componenentes hardware actuales</li>
-                <li>Tornilleria variada (M3, M4)</li>
+                <li>Componentes hardware actuales</li>
+                <li>Tornillería variada (M3, M4)</li>
                 <li>Remaches o tuercas autoblocantes</li>
                 <li>Asa de transporte</li>
                 <li>Gomas/espumas protectoras</li>
                 <li>Filtros antipolvo</li>
                 <li>Bisagras/pestillos robustos</li>
             </ul>
-            <H4> Opcionales</H4>
+            <h4>Opcionales</h4>
             <ul>
-                
                 <li>Pintura resistente (RAL militar)</li>
                 <li>Chapa metálica para refuerzos</li>
                 <li>Sistema de batería UPS</li>
                 <li>Sellador/juntas IP</li>
             </ul>
-            <H4> Herramientas</H4>
-            <ul>                          
+            <h4>Herramientas</h4>
+            <ul>
                 <li>Destornillador, alicates, remachadora</li>
                 <li>Taladro y brocas metal</li>
                 <li>Sierra/dremel para modificadores</li>
@@ -174,141 +124,119 @@
             </ul>
         </section>
 
+        <!-- ===== FASES ===== -->
         <section id="fase1">
             <h2>Fase 1: Planificación</h2>
-            <p>Seleccion de material y realizacion de un boceto inicial</p>
+            <p>Selección de material y realización de un boceto inicial</p>
             <img src="imagenes/fase1.jpg" alt="Fase 1">
         </section>
 
         <section id="fase2">
-            <h2>Fase 2: Preparacion del Chasis (4-5 horas)</h2>
-            <p>Tareas:
-                <ul>
-                    <li>Desmontaje completo y limpieza</li>
-                    <li>Reforzar puntos débiles con remaches/soldadura</li>
-                    <li>Instalar protecciones de esquinas (goma/metal)</li>
-                    <li>Añadir asa de transporte superior</li>
-                    <li>Preparar sistema de cierre (bisagras/pestillos)</li>
-                    <li>Aplicar tratamiento anticorrosion si necesario</li>
-                </ul>
-            </p>
+            <h2>Fase 2: Preparación del Chasis (4-5 horas)</h2>
+            <ul>
+                <li>Desmontaje completo y limpieza</li>
+                <li>Reforzar puntos débiles con remaches/soldadura</li>
+                <li>Instalar protecciones de esquinas (goma/metal)</li>
+                <li>Añadir asa de transporte superior</li>
+                <li>Preparar sistema de cierre (bisagras/pestillos)</li>
+                <li>Aplicar tratamiento anticorrosión si necesario</li>
+            </ul>
             <img src="imagenes/fase2.jpg" alt="Fase 2">
         </section>
 
         <section id="fase3">
-            <h2>Fase 3: Sistema de refrigeracion(2-3 horas)</h2>
-            <p>Modificaciones:
-                <ul>
-                    <li>Calcular flujo de aire necesario (CFM)</li>
-                    <li>Instalar filtros antipolvo en entradas</li>
-                    <li>Añadir ventiladores de presión positiva</li>
-                    <li>Crear conductos de aire dirigido</li>
-                    <li>Proteger ventiladores con rejillas metálicas</li>
-                </ul>
-            </p>
+            <h2>Fase 3: Sistema de refrigeración (2-3 horas)</h2>
+            <ul>
+                <li>Calcular flujo de aire necesario (CFM)</li>
+                <li>Instalar filtros antipolvo en entradas</li>
+                <li>Añadir ventiladores de presión positiva</li>
+                <li>Crear conductos de aire dirigido</li>
+                <li>Proteger ventiladores con rejillas metálicas</li>
+            </ul>
             <img src="imagenes/fase3.jpg" alt="Fase 3">
         </section>
 
         <section id="fase4">
             <h2>Fase 4: Integración de Componentes (3-4 horas)</h2>
-            <p>Instalación:
-                <ul>
-                    <li>Placa base: Montaje con soportes antivibraciones</li>
-                    <li>Almacenamiento: SSD obligatorio (resistencia a golpes)</li>
-                    <li>RAM: Módulos con disipadores</li>
-                    <li>Fuente: Modular, con fijaciones reforzadas</li>
-                    <li>GPU (opcional): Soporte adicional anti-sag</li>
-                </ul>
-            </p>
-            <p>Cableado : Gestion extrema para evitar movimientos</p>
+            <ul>
+                <li>Placa base: Montaje con soportes antivibraciones</li>
+                <li>Almacenamiento: SSD obligatorio (resistencia a golpes)</li>
+                <li>RAM: Módulos con disipadores</li>
+                <li>Fuente: Modular, con fijaciones reforzadas</li>
+                <li>GPU (opcional): Soporte adicional anti-sag</li>
+            </ul>
+            <p>Cableado: Gestión extrema para evitar movimientos</p>
             <img src="imagenes/fase4.jpg" alt="Fase 4">
         </section>
 
         <section id="fase5">
             <h2>Fase 5: Protecciones y sellado (2-3 horas)</h2>
-            <p>Elementos a añadir:
-                <ul>
-                    <li>Juntas de goma en tapas</li>
-                    <li>Filtros de aire (IP rating)</li>
-                    <li>Protectores de conectores externos</li>
-                    <li>Sistema de amortiguación interna (espuma)</li>
-                    <li>Pies de goma antideslizantes</li>
-                </ul>
-            </p>
+            <ul>
+                <li>Juntas de goma en tapas</li>
+                <li>Filtros de aire (IP rating)</li>
+                <li>Protectores de conectores externos</li>
+                <li>Sistema de amortiguación interna (espuma)</li>
+                <li>Pies de goma antideslizantes</li>
+            </ul>
             <img src="imagenes/fase5.jpg" alt="Fase 5">
         </section>
 
         <section id="fase6">
             <h2>Fase 6: Sistema eléctrico (3-4 horas)</h2>
-            <p>Opciones:
-                <ul>
-                    <li>Basico: Cable alimentacion reforzado + SAI externo</li>
-                    <li>Avanzado: Bateria interna (UPS integrada)</li>
-                    <li>Pro: Panel solar pequeño para cargas complementarias</li>
-                </ul>
-            </p>
-            <p> Mediciones: Verificar tensiones con multímetro</p>
+            <ul>
+                <li>Básico: Cable alimentación reforzado + SAI externo</li>
+                <li>Avanzado: Batería interna (UPS integrada)</li>
+                <li>Pro: Panel solar pequeño para cargas complementarias</li>
+            </ul>
+            <p>Mediciones: Verificar tensiones con multímetro</p>
             <img src="imagenes/fase6.jpg" alt="Fase 6">
         </section>
 
         <section id="fase7">
             <h2>Fase 7: Chequeo y pruebas (2-3 horas)</h2>
-            <p>Tests a realizar:
-                <ul>
-                    <li>Arranque y POST</li>
-                    <li>Stress test térmico (Prime95 + FurMark)</li>
-                    <li>Prueba de vibraciones (transporte simulado)</li>
-                    <li>Test de caídas controladas (10-15 cm)</li>
-                    <li>Verificación sellado (spray agua si IP>54)</li>
-                </ul>
-            </p>
+            <ul>
+                <li>Arranque y POST</li>
+                <li>Stress test térmico (Prime95 + FurMark)</li>
+                <li>Prueba de vibraciones (transporte simulado)</li>
+                <li>Test de caídas controladas (10-15 cm)</li>
+                <li>Verificación sellado (spray agua si IP>54)</li>
+            </ul>
             <img src="imagenes/fase7.jpg" alt="Fase 7">
         </section>
 
     </main>
 
-        <!-- INSERTAR PAGINA DE CARLOS 
-         Y JUNTAR LOS CSS -->
-
-
-
-
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Proyecto Modding SMR</h4>
-                    <p>
-                        Innovación y creatividad en modificación de hardware y
-                        software.
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobre">Historia</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-icon">🐦</a>
-                        <a href="#" class="social-icon">📘</a>
-                        <a href="#" class="social-icon">📸</a>
-                        <a href="#" class="social-icon">💼</a>
-                    </div>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Proyecto Modding SMR</h4>
+                <p>Innovación y creatividad en modificación de hardware y software.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📸</a>
+                    <a href="#" class="social-icon">💼</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>
-                    &copy; 2026 Proyecto Modding SMR Tarde. Todos los derechos
-                    reservados.
-                </p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Proyecto Modding SMR Tarde. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
