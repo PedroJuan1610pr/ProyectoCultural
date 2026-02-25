@@ -57,6 +57,8 @@ section {
   padding: 20px;
   background-color: var(--bg-section);
   border-radius: 10px;
+  color: whitesmoke;
+  line-height: 50px;
 }
 
 h1, h2, h4 {
@@ -65,6 +67,11 @@ h1, h2, h4 {
 
 ul {
   line-height: 1.8;
+}
+
+li{
+margin-left: 20px;
+color: whitesmoke;
 }
 
 img {
