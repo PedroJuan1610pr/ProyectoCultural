@@ -50,3 +50,30 @@ window.addEventListener("scroll", function () {
         header.classList.remove("scrolled");
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("main section");
+  const navLinks = document.querySelectorAll(".sidebar a");
+  const headerHeight = document.querySelector("header").offsetHeight;
+
+  function activateSection() {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - headerHeight - 20;
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + currentSection) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateSection);
+  activateSection(); // activar al cargar
+});

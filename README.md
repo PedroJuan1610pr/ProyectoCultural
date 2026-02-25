@@ -50,3 +50,4 @@ Proyecto - - - - Integracion estetica y hardware de alto rendimiento
 
 Fuentes:
 https://es.wikipedia.org/wiki/Modding
+https://chatgpt.com
