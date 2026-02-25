@@ -1,16 +1,16 @@
 /* Paleta de colores */
 :root {
-  --color-1: #D8DDEF;
-  --color-2: #A0A4B8;
-  --color-3: #7293A0;
-  --color-4: #31816F;
-  --color-5: #158465;
+  --color-1: #E2E8F0;
+  --color-2: #94A3B8;
+  --color-3: #475569;
+  --color-4: #0D9488;
+  --color-5: #059669;
 
 
 
-  --bg-dark: #1e1e1e;
-  --bg-sidebar: #111;
-  --bg-section: #2b2b2b;
+  --bg-dark: #0F172A;
+  --bg-sidebar: #020617;
+  --bg-section: #1E293B;
 }
 
 * {
