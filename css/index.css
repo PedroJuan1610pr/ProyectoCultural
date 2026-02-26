@@ -70,6 +70,7 @@ li {
     color: var(--color-1);
 }
 
+
 .proyectos-grid {
     display: flex;
     gap: 2rem;
@@ -98,6 +99,13 @@ li {
     height: auto;
     border-radius: 5px;
 }
+
+.proyecto-link {
+    display: block;
+    text-decoration: none; /* quitar subrayado */
+    color: inherit; /* mantener el color del texto */
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
     main {
