@@ -1,0 +1,139 @@
+/* Estilos para el Index - Página Principal */
+/* Siguiendo el esquema de las páginas de proyectos */
+
+/* ================= MAIN ================= */
+main {
+    margin-top: 80px;
+    padding: 40px;
+    flex: 1;
+}
+
+/* Sections */
+section {
+    scroll-margin-top: 100px;
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: var(--bg-section);
+    border-radius: 10px;
+    color: var(--color-1);
+    line-height: 1.8;
+}
+
+h1, h2, h4 {
+    color: var(--color-4);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+ul {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-left: 20px;
+    color: var(--color-1);
+}
+
+/* Proyecto Items */
+.proyecto-item {
+    background-color: rgba(13, 148, 136, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--color-4);
+    transition: all 0.3s ease;
+}
+
+.proyecto-item:hover {
+    background-color: rgba(13, 148, 136, 0.15);
+    transform: translateX(5px);
+}
+
+.proyecto-item h4 {
+    color: var(--color-4);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.proyecto-item p {
+    color: var(--color-2);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.proyecto-item ul {
+    margin-bottom: 20px;
+}
+
+.btn-proyecto {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--color-4);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-proyecto:hover {
+    background: var(--color-5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 148, 136, 0.3);
+}
+
+/* ================= ANIMACIONES ================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
