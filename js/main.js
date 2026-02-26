@@ -51,29 +51,41 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// Animación fade-in para las secciones
 document.addEventListener("DOMContentLoaded", () => {
+  const fadeInElements = document.querySelectorAll(".fade-in");
+  
+  // Hacer visibles todos los elementos fade-in inmediatamente
+  fadeInElements.forEach(element => {
+    element.classList.add("visible");
+  });
+
   const sections = document.querySelectorAll("main section");
   const navLinks = document.querySelectorAll(".sidebar a");
-  const headerHeight = document.querySelector("header").offsetHeight;
+  const header = document.querySelector("header");
+  
+  if (header && sections.length > 0) {
+    const headerHeight = header.offsetHeight;
 
-  function activateSection() {
-    let currentSection = "";
+    function activateSection() {
+      let currentSection = "";
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - headerHeight - 20;
-      if (window.scrollY >= sectionTop) {
-        currentSection = section.getAttribute("id");
-      }
-    });
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - headerHeight - 20;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.getAttribute("id");
+        }
+      });
 
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + currentSection) {
-        link.classList.add("active");
-      }
-    });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + currentSection) {
+          link.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", activateSection);
+    activateSection(); // activar al cargar
   }
-
-  window.addEventListener("scroll", activateSection);
-  activateSection(); // activar al cargar
 });
