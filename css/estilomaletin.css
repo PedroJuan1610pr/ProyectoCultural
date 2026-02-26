@@ -105,11 +105,11 @@ img {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .sidebar {
-    transform: translateX(-100%);
+   display: none;
   }
   main {
-    margin-left: 0;
-    padding: 20px;
+    margin: 4vw;
+    padding: 0px;
   }
 }
 
