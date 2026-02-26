@@ -56,14 +56,15 @@ header.scrolled {
 }
 
 .logo-titulo {
-    display: flex;
+    display:flex;
     align-items: center;
     gap: 15px;
+    
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -290,10 +291,6 @@ header.scrolled {
         font-size: 0.65rem;
     }
 
-    .logo img {
-        width: 45px;
-        height: 45px;
-    }
 
     .hamburger {
         display: flex;
@@ -378,9 +375,9 @@ header.scrolled {
         font-size: 1rem;
     }
 
-    .logo img {
-        width: 40px;
-        height: 40px;
+    .titulo-secundario
+    {
+        display: none;
     }
 
     .nav-menu li a {
