@@ -69,7 +69,9 @@ section {
   border-radius: 10px;
   color: var(--color-1) ;
   line-height: 50px;
+  
 }
+
 
 h1, h2, h4 {
   color: var(--color-4);
@@ -89,6 +91,17 @@ img {
   max-width: 500px;
   margin-top: 15px;
   border-radius: 8px;
+}
+
+
+section img {
+  display: block;              /* Hace que la imagen sea tipo bloque */
+  margin: 20px auto;           /* Centra horizontalmente */
+  width: 100%;
+  max-width: 500px;
+  border: 4px solid var(--color-4);  /* Borde */
+  border-radius: 10px;         /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Opcional: sombra bonita */
 }
 
 /* ================= ANIMACIONES ================= */
